@@ -17,7 +17,7 @@ func main() {
   flag.Parse()
 
   // take wordlist for password and make string admin:pass then b64 encode and send get request with
-  // the encoded as the WWW-authenticate header.
+  // the encoded as the Authorization header.
   wFile, err := os.Open(*wListFlag)
   if err != nil {
     log.Fatal(err)
